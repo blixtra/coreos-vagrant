@@ -18,8 +18,6 @@ coreos:
   flannel:
     interface: $public_ipv4
   units:
-    - name: etcd.service
-      command: start
     - name: etcd2.service
       command: start
     - name: fleet.service
